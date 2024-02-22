@@ -15,8 +15,22 @@ public class OrangeTest {
         // Calling the method with lambda
         // 1. Interface obj = OCE -> "An orange" + OCE .getVariable
         OrangeFormatter orangeLambda = orange -> "An orange of " + orange.getWeight() + "g";
+        prettyPrentApple(inventory,orangeLambda);
 
+        System.out.println("**********************");
 
+        // Calling this way
+        // 1. methodName( OLE, OCE -> OCE .getVariable
+        prettyPrentApple(inventory, orange -> "An orange of " + orange.getWeight() + "g");
+
+        System.out.println("**********************");
+
+        // If lambda more than one line
+        OrangeFormatter fancyFormatter = orange -> {
+            String ch = orange.getWeight() > 200? "Heavy" : "Light";
+            return "A" + ch + " " + orange.getColor() + "Orange";
+        };
+        prettyPrentApple(inventory, fancyFormatter );
     }
     // Method
     private static void prettyPrentApple(List<Orange> inventory, OrangeFormatter orangeFormatter){
