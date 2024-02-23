@@ -1,4 +1,6 @@
-package org.bank;
+package org.bank.task;
+
+import org.bank.Color;
 
 import java.util.ArrayList;
 import java.util.List;

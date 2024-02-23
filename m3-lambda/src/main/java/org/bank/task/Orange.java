@@ -1,9 +1,10 @@
-package org.bank;
+package org.bank.task;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.bank.Color;
 
 @AllArgsConstructor
 @Getter

@@ -1,9 +1,6 @@
 package org.bank;
 
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class FunctionalInterface {
     public static void main(String[] args) {
@@ -31,5 +28,13 @@ public class FunctionalInterface {
         System.out.println("******Function Return ******");
         Function<String, String> fun = s -> "Hello " + s;
         System.out.println(fun.apply("Developer"));
+
+        System.out.println("******BI Function Return******");
+        BiFunction<Integer, Integer, Integer> func = (x1, x2) -> x1 + x2;
+        System.out.println(func.apply(10,30));
+
+        System.out.println("******SUPPLIER******");
+        Supplier<Double> randomValue = () -> Math.random();
+        System.out.println(randomValue.get());
     }
 }
