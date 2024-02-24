@@ -1,0 +1,24 @@
+             I. Generic static method
+ public static <T> void printEach(List<T> list){
+       for (T each : list) {System.out.println(each) }}
+
+                II. Instant method
+ public void printEachInstant(T[] t){
+        for (T each: t) { System.out.println(each); } }
+
+                   III. Main Print
+ String[] words = {"java", "programmer", "job", "developer"};
+                   IV. Calling Generic static method
+ Generics.printEach(words);
+
+              I. With Lambda (parameters) ->{statement} My Interface Function with method()
+  @FunctionalInterface
+  public interface MyFunctionalInterface {
+      void test(int a);}
+              II. Main Print Test
+   MyFunctionalInterface oddEven = (a) -> { if(a % 2 == 0){ System.out.println(a + " is even");
+              }else {System.out.println(a + " is odd");} };
+               III. Then Call the interface obj and abstract interface method()
+          oddEven.test(15);
+          oddEven.test(20);
+      }

@@ -1,0 +1,53 @@
+Class = has variables and methods
+We can call the method?
+greenApple();
+1. By creating the object
+Apple apple = new Apple;
+apple.greenApple()
+
+2. How Lambda?
+1. Interface and only 1 abstract method()
+2. abstract method should have the same signature
+
+I. Lambda Boolean
+1. Interface ApplePredicate
+2. Signature Boolean test(Apple apple) Type Apple class
+
+A. Example Lambda String
+1. Interface SuzannaPredicate
+2. Signature String developer(Apple apple); Type Apple class
+
+II. Class Apple
+1. Variable int weight;
+
+III. Class Heavy
+1. Implement ApplePredicate interface
+2. Calling the abstract method(Apple apple) and providing the body
+
+IV. Calling Interface
+ApplePredicate abc = apple -> apple.getWeight > 200 (boolean true or false?)
+     Interface OIE = OCE -> Lambda OCE " if the apple weight is greater than 200? True or false"
+     .getVariable > 200
+
+Example A Calling Interface
+SuzannaPredicate ab = apple -> "Mizina";
+
+
+Create Orange
+1. Orange class with variable int weigh, color
+2. Interface OrangeFormatter {with method Signature String accept(Orange orange) } Type Orange AND @FunctionalInterface
+3. TestOrange
+A. Place Orange to the List<Orange> inventory = new ArrayList<Orange>();
+        inventory.add(new Orange( 100, Color.READ)
+ B. Creat Method " Left side List signature, right side Interface"
+ private static void prettyPrentApple(List<Orange> inventory, OrangeFormatter orangeFormatter){
+        for (Orange eachOrange : inventory){ // do it for each orange from list inventory
+           String output =  orangeFormatter.accept(eachOrange); // interfaceObj . accept() method has a signature String
+            System.out.println(output);
+        }
+ C. Calling the method with lambda
+         // 1. Interface obj = OCE -> "An orange" + OCE .getVariable
+         OrangeFormatter orangeLambda = orange -> "An orange of" + orange.getWeight() + "g";
+
+ // you can print all List<>
+        inventory.forEach(apple -> System.out.println(apple) );

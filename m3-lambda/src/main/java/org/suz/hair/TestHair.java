@@ -1,4 +1,8 @@
-package org.suz;
+package org.suz.hair;
+
+import org.suz.hair.Color;
+import org.suz.hair.Hair;
+import org.suz.hair.HairFormatter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +10,7 @@ import java.util.List;
 public class TestHair {
     public static void main(String[] args) {
         List<Hair> inventory = new ArrayList<Hair>();
-        inventory.add(new Hair(14,Color.BLOND));
+        inventory.add(new Hair(14, Color.BLOND));
         inventory.add(new Hair(18, Color.BLACK));
 
         availablePrint(inventory, hair -> "The color of hair is " + hair.getColor() + " the link of hair is " + hair.getLink());

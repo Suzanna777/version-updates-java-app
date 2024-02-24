@@ -1,4 +1,4 @@
-package org.suz;
+package org.suz.hair;
 
 public enum Color {
     BLOND, BLACK
