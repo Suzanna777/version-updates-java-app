@@ -7,8 +7,9 @@ import java.util.function.BiFunction;
 public class TestBiFunctionInterface {
 
     public static void main(String[] args) {
-        // <T, U, R> 3 types
-        // Return only R apply(T, U)
+        //  BiFunction <T, U, R> -> (t,u){
+        // T first argument; U second argument; R return the function result of (t and u)
+        // Return  R apply(t, u) }
         BiFunction<int[], int[], List<Integer>> mergeTwoArray = (a, b) -> {
             List<Integer> list = new ArrayList<>();
             for (int each : a) {

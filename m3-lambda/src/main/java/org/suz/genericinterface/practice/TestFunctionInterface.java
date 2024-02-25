@@ -6,7 +6,8 @@ import java.util.function.Function;
 
 public class TestFunctionInterface {
     public static void main(String[] args) {
-        // left side T, right side R
+        // left side T, right side R;
+        // Then R apply(T t)
         Function<int[], List<Integer>> arrayToList = (a) -> {
             List<Integer> result = new ArrayList<>();
             for (int each : a) {

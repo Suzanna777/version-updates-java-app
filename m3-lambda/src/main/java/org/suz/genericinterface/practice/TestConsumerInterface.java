@@ -5,6 +5,8 @@ import java.util.function.Consumer;
 public class TestConsumerInterface {
     public static void main(String[] args) {
 
+        // Consumer<T> method is void accept(T t)
+        // call objType.accept(t)
         Consumer<int[]> printEach = (arr) -> {
             for (int each : arr) {
                 System.out.println(each);

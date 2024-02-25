@@ -5,7 +5,8 @@ import java.util.function.BiPredicate;
 public class TestBiPredicateInterface {
 
     public static void main(String[] args) {
-        // T, U
+        // <T, U>;
+        // boolean test(T t, U u)
         BiPredicate<int[], Integer> contains = (a, b) -> {
             for (int each : a) {
                 if (each == b) {

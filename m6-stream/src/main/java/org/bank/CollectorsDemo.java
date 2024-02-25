@@ -1,8 +1,9 @@
+
 package org.bank;
 
-import com.cydeo.task.Dish;
-import com.cydeo.task.DishData;
-import com.cydeo.task.Type;
+import org.bank.task.Dish;
+import org.bank.task.DishData;
+import org.bank.task.Type;
 
 import java.util.*;
 import java.util.stream.Collectors;

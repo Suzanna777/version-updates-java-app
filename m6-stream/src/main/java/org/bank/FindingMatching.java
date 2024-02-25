@@ -1,7 +1,6 @@
 package org.bank;
-
-import com.cydeo.task.Dish;
-import com.cydeo.task.DishData;
+import org.bank.task.Dish;
+import org.bank.task.DishData;
 
 import java.util.Arrays;
 import java.util.Comparator;
