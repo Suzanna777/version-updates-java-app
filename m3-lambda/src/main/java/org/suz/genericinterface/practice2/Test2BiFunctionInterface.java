@@ -29,7 +29,7 @@ public class Test2BiFunctionInterface {
         // create the arr a and arr b
         int[] arr1 = {10, 20, 30, 40, 100};
         int[] arr2 = {50, 60, 70, 80, 90};
-        // call the biFunction obj and method apply(t,u) and assign (t,u) to R
+        // call the biFunction obj and method apply(t,u) and assign (t,u) to the R
         List<Integer> result = addTwoArrayToList.apply(arr1, arr2);
 
         System.out.println(result);
